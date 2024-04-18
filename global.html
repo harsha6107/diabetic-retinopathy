@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<title>Explanation Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+<div class="w3-content w3-padding-large w3-margin-top" id="portfolio">
+  <!-- Contact -->
+  <div class="w3-light-grey w3-padding-large w3-padding-32 w3-margin-top" id="prediction">
+    <h3 class="w3-center">Model Performance and Data Report</h3>
+    <hr>
+      <p>Model Performance for the various identified use cases</p>
+    <img src="IMAGE_FOR_DISPLAY1.png" alt="Ocean" class="w3-image" width="1000" height="500">
+    <p><div>
+   <h3>Model Performance Overview</h3>
+   <h4>Model Accuracy:</h4>
+   <ul>
+       <li><strong>Overall Accuracy:</strong> The model achieves an accuracy of 35%, which indicates its effectiveness in correctly identifying the stages of diabetic retinopathy from retinal images. The low accuracy is because of the separation between various stages of DR that is provided.</li>
+   </ul>
+   <h4>Confusion Matrix Analysis:</h4>
+   <p>It shows the distribution of cases identifies across all types contrasted with the actual stage of DR.</p>
+   <h3>Discussion:</h3>
+   <p>The presence of false negatives and false positives underscores the need for continuous model training and improvement, especially in enhancing the model's ability to detect more subtle signs of the condition. Future iterations of the model will focus on reducing these errors by incorporating more diverse data and improving the algorithm’s feature detection capabilities.</p>
+</div>
+
+<div>
+   <h3>Data Overview:</h3>
+   <ul>
+       <li><strong>Training Dataset:</strong> Consists of 2,929 entries.</li>
+       <li><strong>Testing Dataset:</strong> Consists of 733 entries.</li>
+       <li><strong>Columns:</strong> Each dataset includes the following columns:
+           <ul>
+               <li><code>id_code</code>: Unique identifier for each patient.</li>
+               <li><code>age</code>: Age of the patient.</li>
+               <li><code>gender</code>: Gender of the patient (Male or Female).</li>
+               <li><code>diagnosis</code>: Diagnosis results, encoded as integers representing different stages of diabetic retinopathy.</li>
+           </ul>
+       </li>
+   </ul>
+   <h3>Data Description for Global Explanation Page:</h3>
+   <ol>
+       <li><strong>Purpose of the Data:</strong>
+           <p>The datasets are used to train and validate a machine learning model designed to detect different stages of diabetic retinopathy from images of the retina. The model helps in preliminary screening and assists healthcare providers in diagnosis.</p>
+       </li>
+       <li><strong>Data Collection:</strong>
+           <p>The data comprises demographic information (age, gender) and diagnosis results.</p>
+       </li>
+       <li><strong>Integrity and Privacy:</strong>
+           <p>The data is anonymized to protect patient privacy, with each entry represented by a unique identifier rather than personal information. Measures are taken to ensure data integrity and relevance to the condition being screened.</p>
+       </li>
+       <li><strong>Use of Data:</strong>
+           <p>The training data is used to teach the model to recognize signs of diabetic retinopathy in retinal images based on known outcomes. The testing data evaluates the model's accuracy and ability to generalize to new, unseen cases.</p>
+       </li>
+       <li><strong>Limitations:</strong>
+           <p>The data might not cover all demographics equally, which could affect the model's performance across different population groups. The stages of diabetic retinopathy are encoded numerically; 0: 'No signs', 1: 'Mild', 2: 'Moderate', 3: 'Severe', 4: 'Proliferative signs'.</p>
+       </li>
+   </ol>
+</div>
+</p>
+
+  </div>
+
+<!-- End page content -->
+</div>
+</body>
+</html>
